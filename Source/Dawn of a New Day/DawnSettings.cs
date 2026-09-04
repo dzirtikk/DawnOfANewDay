@@ -123,10 +123,10 @@ namespace DawnNewDay
         public Dictionary<string, bool> MN_ExcludeOccasionCategory = DawnDefault.MN_ExcludeOccasionCategory;
 
         private bool m_MN_ReminderTextSection = false;
-        public ModernNotificationsSettings MN_Reminder = DawnDefault.MN_Reminder;
+        public DawnTextConfig MN_Reminder = DawnDefault.MN_Reminder;
 
         private bool m_MN_OccasionTextSection = false;
-        public ModernNotificationsSettings MN_Occasion = DawnDefault.MN_Occasion;
+        public DawnTextConfig MN_Occasion = DawnDefault.MN_Occasion;
 
         #endregion
 

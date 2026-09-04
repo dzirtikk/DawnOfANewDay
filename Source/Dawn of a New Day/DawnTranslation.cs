@@ -201,6 +201,9 @@ namespace DawnNewDay
 
         public static string Label_ModIncompatibility => "DawnNewDay.Label_ModIncompatibility".Translate();
 
+        public static string Label_AddText => "DawnNewDay.Label_AddText".Translate();
+        public static string Label_MaximumDays => "DawnNewDay.Label_MaximumDays".Translate();
+
         #region Modern Notifications Section
 
         public static readonly string MN_ModName = "Modern Notifications";
@@ -250,9 +253,6 @@ namespace DawnNewDay
 
         public static string Section_MN_Reminder => "DawnNewDay.Section_MN_Reminder".Translate();
         public static string Section_MN_Occasion => "DawnNewDay.Section_MN_Occasion".Translate();
-
-        public static string Label_MN_AddText => "DawnNewDay.Label_MN_AddText".Translate();
-        public static string Label_MN_MaximumDays => "DawnNewDay.Label_MN_MaximumDays".Translate();
 
         #endregion
 

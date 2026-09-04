@@ -86,14 +86,14 @@ namespace DawnNewDay
             "<color={MN_REMINDER_REMAINING_COLOR}>-{MN_REMINDER_REMAINING} Remain-</color>";
         public static DawnTextStyle MN_ReminderTextStyle => new(18, true, false, 0.25f);
 
-        public static ModernNotificationsSettings MN_Reminder => new(true, 15, MN_ReminderTextFormat, MN_ReminderTextStyle);
+        public static DawnTextConfig MN_Reminder => new(true, 15, MN_ReminderTextFormat, MN_ReminderTextStyle);
 
         public readonly static string MN_OccasionTextFormat =
             "<size={MN_OCCASION_FONTSIZE / 1.25}>[{MN_OCCASION_CATEGORY}] {MN_OCCASION_LABEL}</size>{ENDLINE}" +
             "<color={MN_OCCASION_REMAINING_COLOR}>-{MN_OCCASION_REMAINING} Remain-</color>";
         public static DawnTextStyle MN_OccasionTextStyle => new(16, true, false, 0.25f);
 
-        public static ModernNotificationsSettings MN_Occasion => new(true, 15, MN_OccasionTextFormat, MN_OccasionTextStyle);
+        public static DawnTextConfig MN_Occasion => new(true, 15, MN_OccasionTextFormat, MN_OccasionTextStyle);
 
         #endregion
 

@@ -153,17 +153,16 @@
 	<DawnNewDay.Section_Compatibility>Compatibility</DawnNewDay.Section_Compatibility>
 
 	<DawnNewDay.Label_ModIncompatibility>This mod isn't currently active or it's incompatible with this RimWorld version or Mod version...</DawnNewDay.Label_ModIncompatibility>
-	
+
+	<DawnNewDay.Label_AddText>Add Text</DawnNewDay.Label_AddText>
+	<DawnNewDay.Label_MaximumDays>Maximum Days</DawnNewDay.Label_MaximumDays>
+
 	<!-- Compatibility - Modern Notifications Section-->
 
 	<DawnNewDay.Label_MN_ExcludeOccasions>Exclude from Occasions</DawnNewDay.Label_MN_ExcludeOccasions>
 	
 	<DawnNewDay.Section_MN_Reminder>Reminder</DawnNewDay.Section_MN_Reminder>
 	<DawnNewDay.Section_MN_Occasion>Occasion</DawnNewDay.Section_MN_Occasion>
-
-	<DawnNewDay.Label_MN_AddText>Add Text</DawnNewDay.Label_MN_AddText>
-
-	<DawnNewDay.Label_MN_MaximumDays>Maximum Days</DawnNewDay.Label_MN_MaximumDays>
 
 	<DawnNewDay.Hint_MN_Preset_ReminderRemainWithSeverityColor>Reminder - Majora's Mask format with severity color</DawnNewDay.Hint_MN_Preset_ReminderRemainWithSeverityColor>
 	<DawnNewDay.Hint_MN_Preset_ReminderRemainWithTimeColor>Reminder - Majora's Mask format with time color</DawnNewDay.Hint_MN_Preset_ReminderRemainWithTimeColor>

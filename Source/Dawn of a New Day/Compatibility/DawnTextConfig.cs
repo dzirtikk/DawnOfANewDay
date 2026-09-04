@@ -3,7 +3,7 @@ using Verse;
 
 namespace DawnNewDay.Compatibility
 {
-    public class ModernNotificationsSettings : IExposable
+    public class DawnTextConfig : IExposable
     {
         public bool AddText = false;
 
@@ -13,9 +13,9 @@ namespace DawnNewDay.Compatibility
 
         private string MaximumTimeBuffer;
 
-        public ModernNotificationsSettings() { }
+        public DawnTextConfig() { }
 
-        public ModernNotificationsSettings(bool addText, int maximumDays, string textFormat, DawnTextStyle textStyle)
+        public DawnTextConfig(bool addText, int maximumDays, string textFormat, DawnTextStyle textStyle)
         {
             AddText = addText;
             MaximumDays = maximumDays;
@@ -25,11 +25,11 @@ namespace DawnNewDay.Compatibility
 
         public void DoContents(Listing_Standard listing, float Scale)
         {
-            listing.CheckboxLabeled(DawnTranslation.Label_MN_AddText, ref AddText);
+            listing.CheckboxLabeled(DawnTranslation.Label_AddText, ref AddText);
 
             if (AddText)
             {
-                listing.LabeledTextFieldNumeric(DawnTranslation.Label_MN_MaximumDays, ref MaximumDays, ref MaximumTimeBuffer, 1, 1200);
+                listing.LabeledTextFieldNumeric(DawnTranslation.Label_MaximumDays, ref MaximumDays, ref MaximumTimeBuffer, 1, 1200);
 
                 listing.Gap();
 

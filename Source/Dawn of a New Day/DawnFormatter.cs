@@ -261,9 +261,6 @@ namespace DawnNewDay
         }
         public readonly int TimeRemainingHour(MNUtility.YearTime targetTime)
         {
-            const int cYearLengthDay = 60;
-            const int cDayLengthHour = 24;
-
             int realDayOfYear = ModernNotifications.Today();
             int realYear = ModernNotifications.Year();
             int realHour = GenHour();
@@ -272,8 +269,8 @@ namespace DawnNewDay
             if (targetResolvedYear == 0)
                 targetResolvedYear = realYear + (targetTime.DayOfYear < realDayOfYear ? 1 : 0);
 
-            int yearsInDays = (targetResolvedYear - realYear) * cYearLengthDay;
-            int remainingHours = (targetTime.DayOfYear - realDayOfYear + yearsInDays) * cDayLengthHour - realHour;
+            int yearsInDays = (targetResolvedYear - realYear) * GenDate.DaysPerYear;
+            int remainingHours = (targetTime.DayOfYear - realDayOfYear + yearsInDays) * GenDate.HoursPerDay - realHour;
 
             return Mathf.Max(remainingHours + 6, 0);
         }

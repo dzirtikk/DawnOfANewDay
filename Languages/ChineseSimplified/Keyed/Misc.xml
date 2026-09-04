@@ -149,17 +149,16 @@
 	<DawnNewDay.Section_Compatibility>mod兼容...</DawnNewDay.Section_Compatibility>
 
 	<DawnNewDay.Label_ModIncompatibility>此mod当前未启用，或者该mod当前版本与rimworld版本/本mod版本不对应。</DawnNewDay.Label_ModIncompatibility>
-	
+
+	<DawnNewDay.Label_AddText>新增对应文本行</DawnNewDay.Label_AddText>
+	<DawnNewDay.Label_MaximumDays>天数上限</DawnNewDay.Label_MaximumDays>
+
 	<!-- 兼容mod：Modern Notifications（现代通知栏）-->
 
 	<DawnNewDay.Label_MN_ExcludeOccasions>排除事件...</DawnNewDay.Label_MN_ExcludeOccasions>
 
 	<DawnNewDay.Section_MN_Reminder>提醒</DawnNewDay.Section_MN_Reminder>
 	<DawnNewDay.Section_MN_Occasion>事件</DawnNewDay.Section_MN_Occasion>
-
-	<DawnNewDay.Label_MN_AddText>新增对应文本行</DawnNewDay.Label_MN_AddText>
-
-	<DawnNewDay.Label_MN_MaximumDays>天数上限</DawnNewDay.Label_MN_MaximumDays>
 
 	<DawnNewDay.Hint_MN_Preset_ReminderRemainWithSeverityColor>提醒-基于严重性颜色的Majora's Mask格式</DawnNewDay.Hint_MN_Preset_ReminderRemainWithSeverityColor>
 	<DawnNewDay.Hint_MN_Preset_ReminderRemainWithTimeColor>提醒-基于时间颜色的Majora's Mask格式</DawnNewDay.Hint_MN_Preset_ReminderRemainWithTimeColor>
