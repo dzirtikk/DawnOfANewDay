@@ -391,12 +391,15 @@ namespace DawnNewDay
 
         #endregion
 
-        private static readonly Regex ExtraRichTextTagRegex = new(@"<(?<tag>\w+)>(?<content>.*?)</\1>", RegexOptions.Compiled | RegexOptions.IgnoreCase);
-        private static readonly Dictionary<string, Func<string, string>> ExtraRichTextTags = new(StringComparer.OrdinalIgnoreCase)
+        private static readonly Regex ExtraRichTextTagRegex = new(@"<(?<tag>\w+)=?(?<content>.*?)?>(?<text>.*?)<\/\1>", RegexOptions.Compiled | RegexOptions.IgnoreCase);
+        private static readonly Dictionary<string, Func<string, string, string>> ExtraRichTextTags = new(StringComparer.OrdinalIgnoreCase)
         {
-            { "title", text => Find.ActiveLanguageWorker.ToTitleCase(text.ToLower())},
-            { "upper", text => text.ToUpper() },
-            { "lower", text => text.ToLower() },
+            { "title", (text, _) => Find.ActiveLanguageWorker.ToTitleCase(text.ToLower())},
+            { "upper", (text, _) => text.ToUpper() },
+            { "lower", (text, _) => text.ToLower() },
+
+            { "ifnotempty", (text, content) => !content.NullOrEmpty() ? text : "" },
+            { "ifempty", (text, content) => content.NullOrEmpty() ? text : "" },
         };
 
         private readonly struct ParsedOperand
@@ -528,9 +531,10 @@ namespace DawnNewDay
             {
                 string tag = match.Groups["tag"].Value;
                 string content = match.Groups["content"].Value;
+                string text = match.Groups["text"].Value;
 
                 if (ExtraRichTextTags.TryGetValue(tag, out var replacer))
-                    return replacer?.Invoke(content);
+                    return replacer?.Invoke(text, content);
 
                 return match.Value;
             });

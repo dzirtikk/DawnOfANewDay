@@ -170,6 +170,9 @@ namespace DawnNewDay
             { "<title>TEXT_HERE</title>", "DawnNewDay.Hint_RichText_Title".Translate() },
             { "<upper>TEXT_HERE</upper>", "DawnNewDay.Hint_RichText_Upper".Translate() },
             { "<lower>TEXT_HERE</lower>", "DawnNewDay.Hint_RichText_Lower".Translate() },
+
+            { "<ifnotempty=CONTENT_HERE>TEXT_HERE</ifnotempty>", "DawnNewDay.Hint_RichText_IfNotEmpty".Translate() },
+            { "<ifempty=CONTENT_HERE>TEXT_HERE</ifempty>", "DawnNewDay.Hint_RichText_IfEmpty".Translate() },
         };
 
         #endregion

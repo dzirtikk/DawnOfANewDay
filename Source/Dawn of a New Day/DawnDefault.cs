@@ -50,7 +50,7 @@ namespace DawnNewDay
 
         public readonly static string UpperTextFormat = "DAY {DAY_SETTLE} <size={UPPER_FONTSIZE / 2}>{HOUR_D2}:00 | <color={TEMPERATURE_COLOR}>{TEMPERATURE}</color></size>";
         public readonly static string BottomTextFormat = "YEAR {YEAR} | <upper>{QUADRUM}</upper> | <upper>{SEASON}</upper>";
-        public readonly static string SubtitleTextFormat = "{FACTION} ~ {SETTLEMENT}";
+        public readonly static string SubtitleTextFormat = "{FACTION} ~ {SETTLEMENT} <ifnotempty={CONDITION}>[{CONDITION}]</ifnotempty>";
 
         #endregion
 

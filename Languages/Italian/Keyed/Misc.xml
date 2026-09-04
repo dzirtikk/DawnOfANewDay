@@ -135,6 +135,9 @@
 	<DawnNewDay.Hint_RichText_Upper>Rende tutto il testo in maiuscolo [eg. Aprimaggio -> APRIMAGGIO]</DawnNewDay.Hint_RichText_Upper>
 	<DawnNewDay.Hint_RichText_Lower>Rende tutto il testo in minuscolo [eg. Primavera -> primavera]</DawnNewDay.Hint_RichText_Lower>
 
+	<DawnNewDay.Hint_RichText_IfNotEmpty>Se il contenuto NON È vuoto, mostrerà il testo - Formats</DawnNewDay.Hint_RichText_IfNotEmpty>
+	<DawnNewDay.Hint_RichText_IfEmpty>Se il contenuto È vuoto, mostrerà il testo - Formats</DawnNewDay.Hint_RichText_IfEmpty>
+
 	<!-- Sound Section -->
 	<DawnNewDay.Section_Sound>Suono</DawnNewDay.Section_Sound>
 	

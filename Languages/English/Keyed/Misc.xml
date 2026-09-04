@@ -135,6 +135,9 @@
 	<DawnNewDay.Hint_RichText_Upper>Converts all text to uppercase [eg. Aprimay -> APRIMAY]</DawnNewDay.Hint_RichText_Upper>
 	<DawnNewDay.Hint_RichText_Lower>Converts all text to lowercase [eg. Spring -> spring]</DawnNewDay.Hint_RichText_Lower>
 
+	<DawnNewDay.Hint_RichText_IfNotEmpty>If the content IS NOT empty, it will show the text - Formats</DawnNewDay.Hint_RichText_IfNotEmpty>
+	<DawnNewDay.Hint_RichText_IfEmpty>If the content IS empty, it will show the text - Formats</DawnNewDay.Hint_RichText_IfEmpty>
+	
 	<!-- Sound Section -->
 	<DawnNewDay.Section_Sound>Sound</DawnNewDay.Section_Sound>
 
